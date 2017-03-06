@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> {{ title or "Mi App Favo"}} </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" />  -->
+    estamos dentro del "head" section (nota esta linea es parte del mibase.html)
+  </head>
+  <br><br><br>
+
+  <body>
+    {% block content %}
+
+    {% endblock %}
+    </body>
+</html>

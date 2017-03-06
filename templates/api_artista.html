@@ -1,0 +1,21 @@
+{% extends 'mibase.html' %}
+{% block content %}
+
+
+
+<h1> {{ nombreartista }} </h1>
+el usuario del browser (o cualquier tipo de client) suministro la sig palabra:  {{ nombreartista }}
+<br><br>
+
+las canciones que corresponen a dicho artista son: <br><br>
+<ul>
+  {% for runsthroughindexes in definitions %}
+    <li>
+      {{ runsthroughindexes }}
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+{% endblock %}
